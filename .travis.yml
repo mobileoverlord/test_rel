@@ -14,3 +14,7 @@ env:
 
 script:
   - mix compile
+
+deploy:
+  provider: script
+  script: test.sh
