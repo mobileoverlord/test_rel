@@ -14,8 +14,3 @@ env:
 
 script:
   - mix compile
-
-deploy:
-  # Deploy tagged releases to GitHub
-  - provider: script
-    script: test.sh
