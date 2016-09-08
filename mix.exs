@@ -20,8 +20,8 @@ defmodule NervesSystemBbb.Mixfile do
   end
 
   defp deps do
-    [{:nerves_system, "~> 0.1"},
-     {:nerves_system_br, "~> 0.1"},
+    [{:nerves_system, "~> 0.1.4"},
+     {:nerves_system_br, "~> 0.6.1"},
      {:nerves_toolchain_arm_unknown_linux_gnueabihf, "~> 0.6.0"}]
   end
 
@@ -33,7 +33,10 @@ defmodule NervesSystemBbb.Mixfile do
 
   defp package do
     [maintainers: ["Frank Hunleth", "Justin Schneck"],
-     files: ["rootfs-additions", "bbb-busybox.config", "LICENSE", "mix.exs", "nerves_defconfig", "nerves.exs", "README.md", "VERSION"],
+     files: ["rootfs-additions", "bbb-busybox.config", "LICENSE",
+             "mix.exs", "nerves_defconfig", "nerves.exs", "README.md",
+             "VERSION", "fwup.conf", "post-createfs.sh", "uboot",
+             "uboot-script.cmd", "linux"],
      licenses: ["Apache 2.0"],
      links: %{"Github" => "https://github.com/nerves-project/nerves_system_bbb"}]
   end

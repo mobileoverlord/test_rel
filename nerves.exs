@@ -16,6 +16,11 @@ config :nerves_system_bbb, :nerves_env,
     defconfig: "nerves_defconfig",
     package_files: [
       "bbb-busybox.config",
-      "rootfs-additions"
+      "rootfs-additions",
+      "fwup.conf",
+      "post-createfs.sh",
+      "uboot",
+      "uboot-script.cmd",
+      "linux"
     ]
   ]
