@@ -18,7 +18,3 @@ script:
 deploy:
   provider: script
   script: rvm $TRAVIS_RUBY_VERSION do script.rb
-
-# Display build log on failure
-after_failure:
-    - tail -n 1000 build.log
