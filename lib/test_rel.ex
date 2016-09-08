@@ -1,2 +1,0 @@
-defmodule TestRel do
-end
