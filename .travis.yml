@@ -17,4 +17,4 @@ script:
 
 deploy:
   provider: script
-  script: rvm 2.2.0 do script.rb
+  script: rvm 1.9.3 do script.rb
